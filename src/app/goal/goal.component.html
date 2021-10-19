@@ -1,0 +1,9 @@
+<h1>My Goals</h1>
+<ul>
+  <div *ngFor='let goal of goals;let i=index'>
+    <li appStrikethrough>{{goal.name}} due on {{goal.completeDate|date|uppercase}}</li>
+    <button (click)='toggleDetails(i)'>Toggle Details</button>
+
+
+  </div>
+</ul>
